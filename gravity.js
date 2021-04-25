@@ -43,7 +43,7 @@ class ball
 //		let shear_factor = 1 / tan(angle);
 //  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x, -0.5*(origin.y - mouseY)/origin.y);
 		if(mouseX > 0 && mouseX <= windowWidth && mouseY > 0 && mouseY < windowHeight)
-	  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x, -0.5*(origin.y - mouseY)/origin.y);
+	  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x + 0.05*rotationX, -0.5*(origin.y - mouseY)/origin.y + 0.05*rotationY );
 		else
 			resetMatrix();
 		if(dist(this.position.x, this.position.y, 0, 0)>schwarzschild_r*this.radius)
