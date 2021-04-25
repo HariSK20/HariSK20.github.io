@@ -179,7 +179,7 @@ div.normal
     flex-direction: row;
 	justify-items: center;
 	transition: height 1s;
-	overflow-x: scroll;
+	overflow-x: auto;
 }
 
 .list_item
