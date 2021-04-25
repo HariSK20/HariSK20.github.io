@@ -44,8 +44,8 @@ class ball
 //  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x, -0.5*(origin.y - mouseY)/origin.y);
 		if(mouseX > 0 && mouseX <= windowWidth && mouseY > 0 && mouseY < windowHeight)
 	  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x + 0.05*accelerationX, -0.5*(origin.y - mouseY)/origin.y + 0.05*accelerationY );
-		else
-			resetMatrix();
+		// else
+		// 	resetMatrix();
 		if(dist(this.position.x, this.position.y, 0, 0)>schwarzschild_r*this.radius)
 			ellipse(origin.x + this.position.x, origin.y - this.position.y, this.radius*2);
 //		ellipse(origin.x + this.position.x, origin.y - this.position.y, this.radius*2*(this.position.mag()/this.original_pos.mag()));
