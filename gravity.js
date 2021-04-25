@@ -122,7 +122,7 @@ function setup() {
 	let q = min(windowHeight, windowWidth);
 	entry = 2*q/3;
 	rings = ceil(q/(4*30));
-	count = 20*rings;
+	count = windowHeight>windowWidth? 10*rings : 20*rings;
 	console.log(count, rings);
 //	console.log(angle);
 //	console.log(origin);
