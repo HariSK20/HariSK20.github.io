@@ -13,6 +13,18 @@
 	
 	<link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/javascript" src="gravity.js"></script>
+	<script>
+		var myVar;
+		
+		function myFunction() {
+		  myVar = setTimeout(showPage, 3000);
+		}
+		
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  //document.getElementById("myDiv").style.display = "block";
+		}
+	</script>
 </head>
 <!--
 
@@ -41,7 +53,10 @@
 		</div>					
 	</li>
 -->
-<body>
+<body onload="myFunction()" style="margin:0;"> <!-- added call for preload animation-->
+	
+	<div id="loader"></div>
+
 	<nav class = "navbar">
 		<ul style="list-style:none;padding: 0;" class="nav_list">
 			<li class = "nav_item">
@@ -86,7 +101,7 @@
 			<h1> Hello There! <br><br> My name is Harishankar S Kumar </h1>
 			<h3> I am a Sophomore Computer Science student at College of Engineering Trivandrum</h3>
 			<h3> Batch 2019-infinity </h3>
-			<h5>Mobile Rotation Test mode3</h5>
+			<h5>Mobile Rotation Test mode4</h5>
 		</div>
 
 
