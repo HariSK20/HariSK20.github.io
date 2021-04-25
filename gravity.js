@@ -43,7 +43,7 @@ class ball
 //		let shear_factor = 1 / tan(angle);
 //  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x, -0.5*(origin.y - mouseY)/origin.y);
 		if(mouseX > 0 && mouseX <= windowWidth && mouseY > 0 && mouseY < windowHeight)
-	  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x + 0.05*rotationY, -0.5*(origin.y - mouseY)/origin.y + 0.05*rotationX );
+	  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x + 0.05*rotationY, -0.5*(origin.y - mouseY)/origin.y + 0.08*rotationX );
 		// else
 		// 	resetMatrix();
 		if(dist(this.position.x, this.position.y, 0, 0)>schwarzschild_r*this.radius)
@@ -120,8 +120,8 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	set_origin();
 	let q = min(windowHeight, windowWidth);
-	entry = 2*q/3;
-	rings = ceil(q/(4*30));
+	entry = windowHeight>windowWidth? q/3 : 2*q/3;
+	rings = ceil(q/((windowHeight>windowWidth? 8 : 4)*30));
 	count = windowHeight>windowWidth? 8*rings : 20*rings;
 	console.log(count, rings);
 //	console.log(angle);
