@@ -35,7 +35,7 @@ class ball
 	{
 		this.update();
 		fill(155, 255, 255);
-		ellipse(origin.x, origin.y, 10);
+		// ellipse(origin.x, origin.y, 10);
 //		console.log("printsed");
 		//noStroke();
 		//stroke(200);

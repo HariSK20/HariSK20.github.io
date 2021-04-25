@@ -1,8 +1,8 @@
 :root
 {
 	--color : #000000;
-	--nav_color: rgb(0, 17, 29);
-	--div_background: rgba(124, 111, 98, 0.4);
+	--nav_color: rgb(0, 67, 116);
+	--div_background: rgba(77, 52, 25, 0.637);
 	--transition-speed: 600ms;
 }
 html {
@@ -152,6 +152,10 @@ a.card_link
 section.main_content
 {
 	margin-left: 5.6rem;
+	/* background-color: rgba(41, 33, 26, 0.95);
+	padding-top: 1rem;
+	border-radius: 1rem; */
+
 }
 
 div.initial
@@ -235,6 +239,7 @@ div.normal
 
 .certificate
 {
+	max-width: 140px;
 	width: 80%;
 	align-self: center;
 	height: 70%;
