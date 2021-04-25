@@ -7,6 +7,7 @@ let rings = 10;
 var entry = 700;
 let black_hole_mass = 3000;
 let schwarzschild_r = 1.5;
+let as_ratio;
 //angleMode(DEGREES);
 function set_origin() {
 //    origin = createVector(2*windowWidth/3, 2*windowHeight/3);
@@ -43,7 +44,7 @@ class ball
 //		let shear_factor = 1 / tan(angle);
 //  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x, -0.5*(origin.y - mouseY)/origin.y);
 		if(mouseX > 0 && mouseX <= windowWidth && mouseY > 0 && mouseY < windowHeight)
-	  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x + 0.05*rotationY, -0.5*(origin.y - mouseY)/origin.y + 0.08*rotationX );
+	  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x + 0.05*rotationY, -0.5*(origin.y - mouseY)/origin.y + as_ratio*0.05*rotationX );
 		// else
 		// 	resetMatrix();
 		if(dist(this.position.x, this.position.y, 0, 0)>schwarzschild_r*this.radius)
@@ -120,6 +121,7 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	set_origin();
 	let q = min(windowHeight, windowWidth);
+	as_ratio = windowHeight/windowWidth;
 	entry = windowHeight>windowWidth? q/3 : 2*q/3;
 	rings = ceil(q/((windowHeight>windowWidth? 8 : 4)*30));
 	count = windowHeight>windowWidth? 8*rings : 20*rings;
