@@ -48,7 +48,7 @@ class ball
 		// else
 		// 	resetMatrix();
 // 		if(dist(this.position.x, this.position.y, 0, 0)>schwarzschild_r*this.radius)
-		ellipse(origin.x + this.position.x, origin.y - this.position.y, this.radius*2);
+// 			ellipse(origin.x + this.position.x, origin.y - this.position.y, this.radius*2);
 //		ellipse(origin.x + this.position.x, origin.y - this.position.y, this.radius*2*(this.position.mag()/this.original_pos.mag()));
 	}
 }
