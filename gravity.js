@@ -47,8 +47,8 @@ class ball
 	  		applyMatrix(1, 0, 0, 1, 1*(mouseX - origin.x)/origin.x + 0.05*rotationY, -0.5*(origin.y - mouseY)/origin.y + as_ratio*0.05*rotationX );
 		// else
 		// 	resetMatrix();
-		if(dist(this.position.x, this.position.y, 0, 0)>schwarzschild_r*this.radius)
-			ellipse(origin.x + this.position.x, origin.y - this.position.y, this.radius*2);
+// 		if(dist(this.position.x, this.position.y, 0, 0)>schwarzschild_r*this.radius)
+// 			ellipse(origin.x + this.position.x, origin.y - this.position.y, this.radius*2);
 //		ellipse(origin.x + this.position.x, origin.y - this.position.y, this.radius*2*(this.position.mag()/this.original_pos.mag()));
 	}
 }
