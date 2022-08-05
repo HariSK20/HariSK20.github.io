@@ -179,7 +179,8 @@ div.normal
 	width: 100%;
 	height: auto;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+	flex-wrap: wrap;
 	justify-items: center;
 	transition: height 1s;
 	overflow-x: auto;
@@ -189,7 +190,7 @@ div.normal
 {
 	margin:1rem;
 	text-align: center;
-	flex-basis: 100%;
+	/* flex-basis: 100%; */
 }
 
 
@@ -200,9 +201,11 @@ div.normal
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 1rem;
 	height: clamp(8rem, 16rem, 24rem);
 	width: 92%;
 	min-width: 100px;
+	max-width: 250px;
 	padding: 0.5rem;
 	border-radius: 16px;
 	background: #17141d;
@@ -253,7 +256,9 @@ div.normal
 .skill
 {
 	width: 8rem;
+	/* width: auto; */
 	height: 8rem;
+	/* height: auto; */
 	/* width: clamp(5rem, 10rem, 15rem);
 	height: clamp(5rem, 10rem, 15rem); */
 	align-self: center;
