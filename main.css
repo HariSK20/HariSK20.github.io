@@ -245,6 +245,8 @@ div.normal
 	width: 80%;
 	align-self: center;
 	height: 70%;
+	margin: 0.5rem;
+	padding: 1rem;
 }
 
 .skill_item
