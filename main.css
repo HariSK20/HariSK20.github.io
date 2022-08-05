@@ -252,14 +252,14 @@ div.normal
 .skill_item
 {
 	flex-basis: auto;
-	margin: 1rem;
+	margin: 0.5rem;
 }
 
 .skill
 {
-	width: 8rem;
+	width: 7rem;
 	/* width: auto; */
-	height: 8rem;
+	height: 7rem;
 	/* height: auto; */
 	/* width: clamp(5rem, 10rem, 15rem);
 	height: clamp(5rem, 10rem, 15rem); */
