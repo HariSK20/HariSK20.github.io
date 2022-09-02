@@ -203,6 +203,7 @@ div.normal
 	height: auto;
 	width: auto;
 	margin: auto;
+	text-decoration: none;
 	/* min-width: 100px;
 	max-width: 250px; */
 	/* padding: 0.5rem; */
